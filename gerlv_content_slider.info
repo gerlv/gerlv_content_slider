@@ -1,0 +1,7 @@
+name = "ger.lv Content slider"
+core = "6.x"
+description = "Content slider"
+dependencies[] = "views"
+package = "ger.lv"
+project = "gerlv_content_slider"
+version = "6.x-0.1"

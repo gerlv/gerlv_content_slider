@@ -1,0 +1,40 @@
+<?php
+
+function gerlv_content_slider_menu() {
+  $items['admin/settings/gerlv_content_slider'] = array(
+    'title' => 'Content Slider Control Panel',
+    'page callback' => '_gerlv_content_slider_admin',
+    #'page arguments' => array('control/editor'),
+    'access arguments' => array('administer menu'),    
+    'weight' => 50,
+    'type' => MENU_LOCAL_TASK
+  );
+}
+
+function _gerlv_content_slider_admin() {
+  return "";
+}
+
+function gerlv_content_slider_block($op = 'list', $delta = 0, $edit = array()) {
+  switch ($op) {
+    case 'list':
+        return array(
+          'slider' => array(
+             'info' => 'Content Slider' 
+          )
+        );
+      break;
+
+    case 'edit':
+      break;
+
+    case 'save':
+      break;
+
+    case 'view':
+        return array(
+          
+        );
+      break;
+  }
+}
